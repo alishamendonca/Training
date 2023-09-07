@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <script>
+        function validate()
+        {
+            let a=document.getElementById("n1");
+            let b=document.getElementById("n2");
+            let email=document.getElementById("em");
+            let password=document.getElementById("pwd");
+            let g=document.getElementsByName("gender");
+            let de=document.getElementById("dep");
+            let num=document.getElementById("no");
+            let d =document.getElementById("dob");
+            let r1= /^[789]{1}[0-9]{9}$/ ;
+            var r2 = /^([A-Za-z0-9\.-_]+)@([A-Za-z0-9-]+)\.([a-z]+)(\.[a-z]+)?$/;
+
+            if(a.value.trim()=="")
+            {
+                alert("Enter the first name");
+                return false;
+            }
+            else if(b.value.trim()=="")
+            {
+                alert("Enter the last name");
+                return false;
+            }
+            else if(g[0].checked == false && g[1].checked == false && g[2].checked == false )
+            {
+                alert("Select the gender");
+                return false;
+            }
+            else if(num.value.trim()=="")
+            {
+                alert("Enter your mobile number");
+                return false;
+            }
+            else if(r1.test(num.value)==false)
+            {
+                alert("Enter valid mobile number");
+                return false;
+            }
+            else if(d.value =="")
+            {
+                alert("Enter the date of birth");
+                return false;
+            }
+            else if(email.value.trim()==false)
+            {
+                alert("Enter email id");
+                return false;
+            }
+            else if(r2.test(email.value)== false)
+            {
+                alert("Enter a valid email id");
+                return false;
+            }
+            else if(password.value.trim() == "")
+            {
+                alert("Enter the password");
+                return false;
+            }
+            else if(password.value.trim().length < 8)
+            {
+                alert("Length of password must be greater than 8");
+                return false;
+            }
+            else if(password.value.search(/[A-Z]/) == -1)
+            {
+                alert("Password must contain atleast 1 uppercase alphabet");
+                return false;
+            }
+            else if(password.value.search(/[a-z]/) == -1)
+            {
+                alert("Password must contain atleast 1 lowercase alphabet");
+                return false;
+            }
+            else if(password.value.search(/[0-9]/) == -1)
+            {
+                alert("Password must contain atleast 1 number");
+                return false;
+            }
+
+            
+            else if(de == "")
+            {
+                alert("Select Department");
+                
+            }
+
+            else
+            {
+                alert("Form validated successfully");
+
+                return true;
+            }
+            
+
+
+        }
+        
+
+
+    </script>
+    <header>
+        <div class="navbar">
+            <div class="college">
+                <div class="logo">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div class="address">
+                    <div class="address-1">EXCEL UNIVERSITY</div>
+                    <div class="address-2">BAMBOLIM-GOA</div>
+                </div>
+
+            </div>
+            <div class="stu-port">
+                Student Portal
+            </div>
+            
+            <div class="explore">
+                <ul>
+                    <li class="border"><a href="registration.html" target="_blank">REGISTRATION</a></li>
+                    <li class="border"><a href="signin.html" target="_blank">SIGN IN</a></li>
+                    <li class="border"><a href="results.html" target="_blank">RESULTS</a></li>
+                    <li class="border"><a href="details.html" target="_blank">STUDENT DETAILS</a></li>
+
+                </ul>
+            </div>
+            
+        </div>
+    </header>
+    <div class="background">
+        <div class="heading">
+            REGISTER
+        </div>
+        <div class="reg-form">
+            <form>
+                <label for="sname">First Name: </label>
+                <input type="text" id="n1" name="fname">
+                <br><br>
+                <label for="lname">Last Name: </label>
+                <input type="text" id="n2" name="laname">
+                <br><br>
+                <label for="gend">Gender: </label>
+                <input type="radio" id="ma" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="fe" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="ot" name="gender" value="other">
+                <label for="other">Other</label>
+                <br><br>
+                <label for="num">Mobile No: </label>
+                <input type="text" id="no" name="num">
+                <br><br>
+                <label for="dob">Date of Birth: </label>
+                <input type="date" id="dob" name="birthdate">
+                <br><br>
+                <label for="mail">Email: </label>
+                <input type="text" id="em" name="email">
+                <br><br>
+                <label for="pass">Password: </label>
+                <input type="password" id="pwd" name="passwd">
+                <br><br>
+                <label for="dept">Department</label>
+                <select name="dept" id="dep">
+                    <option value="comp">Computer Engineering</option>
+                    <option value="ece">Electronics & Communication Engineering</option>
+                    <option value="mech">Mechanical Engineering</option>
+                </select>
+                <br><br>
+                <input type="reset" class="button" value="Reset">
+                <input type="submit" class="button" value="Submit" onclick="return validate()">
+                
+    
+                
+                
+    
+            </form>
+    </div>
+    <footer>
+        <div class="foot-panel1">
+            Contact Us: 9347128302
+        </div>
+        <div class="foot-panel2">
+            
+            © 1984-2023, Excelun.com, Inc. or its affiliates
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
