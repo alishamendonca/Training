@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function message()
+        {
+            let a= parseInt(document.getElementById("n1").value);
+            let b= document.getElementById("msg").value;
+
+            for(let i=0;i<a;i++)
+            {
+                document.write(b +" <br>");
+            }
+        }
+    </script>
+    <label for="num">Enter a number: </label>
+    <input type="text" id="n1" name="num1">
+    <br><br>
+    <label for="msg">Enter a message: </label>
+    <input type="text" id="msg" name="message">
+    <br><br>
+    <button type="button" onclick="message()">Submit</button>
+    <p id="num"></p>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(49, 49, 144);
+}
+.registration{
+    display: inline-block;
+    height: 500px;
+    width: 600px;
+}
+fieldset{
+    
+    height: 300px;
+    width: 550px;
+    border: 2px solid white;
+    color: white;
+    padding: 20px;
+    font-size: 1.1rem;
+}

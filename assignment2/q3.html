@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q3</title>
+</head>
+<body>
+    <script>
+        function largest()
+        {
+            let a= parseInt(document.getElementById("n1").value);
+            let b= parseInt(document.getElementById("n2").value);
+            let c= parseInt(document.getElementById("n3").value);
+
+            if(a>b && a>c)
+            {
+                document.getElementById("la").innerHTML=a+" is the largest";
+
+            }
+            else if(b>a && b>c)
+            {
+                document.getElementById("la").innerHTML=b+" is the largest";
+                
+            }
+            else
+            {
+                document.getElementById("la").innerHTML=c+" is the largest";
+            }
+        }
+
+    </script>
+    <h2>Program to find largest of three numbers</h2>
+
+    <label for="num1">Enter number 1: </label>
+    <input type="text" id="n1" name="num1">
+    <br>
+    <label for="num2">Enter number 2: </label>
+    <input type="text" id="n2" name="num2">
+    <br>
+    <label for="num3">Enter number 3: </label>
+    <input type="text" id="n3" name="num3">
+    <br><br>
+    <button type="button" onclick="largest()"> FInd largest</button>
+    <p id="la"></p>
+
+
+</body>
+
+</html>

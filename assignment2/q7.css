@@ -1,0 +1,15 @@
+.details{
+    border: 2px solid blue;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: gray;
+}
+.but{
+    border: 2px solid aqua;
+    background-color: peachpuff;
+}
+.but:hover{
+    background-color: rgb(167, 209, 68);
+}
