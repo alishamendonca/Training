@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q11</title>
+</head>
+<body>
+    <script>
+        let str = "Uniform Resource Locator";
+        let capltrs = [];
+        document.write(str);
+
+        for (let i = 0; i < str.length; i++) {
+            let code = str.charCodeAt(i);
+            if (code >= 65 && code <= 90) 
+            {
+                capltrs.push(code);
+            }
+        }
+
+        document.write("<br>Character Codes of Capital Letters: "+capltrs);
+
+        let result  = "";
+        for (let code of capltrs) {
+            result += String.fromCharCode(code);
+        }
+
+        document.write("<br>Output: "+result);
+
+    </script>
+</body>
+</html>
