@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculate(math,phy,chem){
+            let avg=(math+phy+chem)/3;
+
+            if(avg<70){
+                document.write("C grade");
+            }
+            else if(avg>=70 && avg<90){
+                document.write("B grade");
+            }
+            else{
+                document.write("A grade");
+            }
+
+        }
+        let maths= parseInt(prompt("Enter the student's marks in Maths: "));
+        let physics= parseInt(prompt("Enter the student's marks in Physics: "));
+        let chemistry= parseInt(prompt("Enter the student's marks in Chemistry: "));
+        calculate(maths,physics,chemistry);
+
+
+    </script>
+    
+</body>
+</html>

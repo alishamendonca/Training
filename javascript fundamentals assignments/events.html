@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script>
+       
+        function add(){
+            let parent=document.getElementById("par");
+            let child=document.createElement("p");
+            let content=document.createTextNode("TV-500$");
+            child.appendChild(content);
+            parent.appendChild(child);
+
+        }
+        function removeN(){
+
+            let parent=document.getElementById("par");
+            let child=document.getElementById("cell");
+            parent.removeChild(child);
+        }
+    </script>
+</head>
+<body>
+    <div id="par">
+        <p id="lap">Laptop-1000$</p>
+        <p id="cell">Cellphone-300$</p>
+
+    </div>
+   
+
+    <button type="button" onclick="add()" id="bt1">add</button>
+    <button type="button" onclick="removeN()" id="bt2">delete</button>
+    
+</body>
+</html>

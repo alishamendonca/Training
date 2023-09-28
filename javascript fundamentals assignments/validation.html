@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <script>
+        function validation(){
+            let email=document.getElementById("em").value;
+            let password=document.getElementById("pw").value;
+            let phone=document.getElementById("unm").value;
+            let r1= /^[789]{1}[0-9]{9}$/ ;
+            let r2 = /^([A-Za-z0-9\.-_]+)@([A-Za-z0-9-]+)\.([a-z]+)(\.[a-z]+)?$/;
+            if(email="")
+            {
+                alert("Enter email id");
+                return false;
+            }
+            else if(r2.test(email)== false)
+            {
+                alert("Enter a valid email id");
+                return false;
+            }
+            else if(password == "")
+            {
+                alert("Enter the password");
+                return false;
+            }
+            else if(password.length < 8)
+            {
+                alert("Length of password must be greater than 8");
+                return false;
+            }
+            else if(password.search(/[A-Z]/) == -1)
+            {
+                alert("Password must contain atleast 1 uppercase alphabet");
+                return false;
+            }
+            else if(password.search(/[a-z]/) == -1)
+            {
+                alert("Password must contain atleast 1 lowercase alphabet");
+                return false;
+            }
+            else if(password.search(/[0-9]/) == -1)
+            {
+                alert("Password must contain atleast 1 number");
+                return false;
+            }
+            
+            else if(phone=="")
+            {
+                alert("Enter your mobile number");
+                return false;
+            }
+            else if(r1.test(phone)==false)
+            {
+                alert("Enter valid mobile number");
+                return false;
+            }
+            else
+            {
+                alert("Form validated successfully");
+                return true;
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label>Email: </label>
+        <input type="text" id="em" name="email">
+        <label>Email: </label>
+        <input type="pw" id="em" name="passwd">
+        <label>Phone number: </label>
+        <input type="text" id="num" name="numb">
+        <input type="submit" class="button" value="Submit" onclick="return validation()">
+    </form>
+</body>
+</html>
