@@ -1,0 +1,55 @@
+.div1{
+    color: rgb(82, 30, 132);
+    background-color: bisque;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(121, 40, 40);
+    text-decoration-style: solid;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    line-height: 1.5rem;
+    text-shadow: 2px 2px 2px rgb(222, 161, 209);
+    margin: 10px;
+}
+
+.div2{
+    color: #53250f;
+    background-color: rgb(222, 200, 186);
+    text-align: left;
+    text-decoration-line: line-through;
+    text-decoration-color: rgb(146, 133, 76);
+    text-decoration-style:solid;
+    text-transform: lowercase;
+    word-spacing: 2px;
+    line-height: 1.5rem;
+    text-shadow: 2px 2px 2px rgb(222, 161, 209);
+    margin: 10px;
+}
+
+.div3{
+    color: maroon;
+    background-color: rgb(138, 203, 196);
+    text-align: right;
+    text-decoration-line: overline;
+    text-decoration-color: rgb(121, 40, 40);
+    text-decoration-style: dotted;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    line-height: 1.5rem;
+    text-shadow: 2px 2px 2px rgb(222, 161, 209);
+    margin: 10px;
+}
+
+.div4{
+    color: rgb(16, 66, 88);
+    background-color: rgb(165, 224, 113);
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(121, 40, 40);
+    text-decoration-style: solid;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    line-height: 1.5rem;
+    text-shadow: 2px 2px 2px rgb(222, 161, 209);
+    margin: 10px;
+}

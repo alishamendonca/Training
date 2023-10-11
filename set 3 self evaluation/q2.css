@@ -1,0 +1,71 @@
+.box {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    background-color: lavender;
+    border: 2px solid #602b2b;
+    margin: 30px;
+    outline: 2px dotted #42b0b0; /* Outline property */
+}
+
+/* Apply different values for width and height */
+.box2 {
+    width: auto;
+    box-sizing: border-box;
+    background-color: rgb(97, 106, 69);
+    height: 300px;
+    padding: 30px;
+    border: 1px solid #70500c;
+    margin: 30px;
+    outline: 2px solid #199898; 
+}
+
+.box3 {
+    width: 50%;
+    box-sizing: border-box;
+    height: 200px;
+    padding: 30px;
+    background-color: beige;
+    border: 2px solid #602b2b;
+    margin: 30px;
+    outline: 2px dashed #8e5718; 
+}
+
+.box4 {
+    min-width: 150px;
+    max-width: 300px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    background-color: palevioletred;
+    border: 2px solid #602b2b;
+    margin: 30px;
+    outline: 2px dotted #42b0b0; 
+}
+
+.box5 {
+    height: 100px; /* 50% of the viewport height */
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    background-color: aliceblue;
+    border: 2px solid #602b2b;
+    margin: 30px;
+    outline: 2px dotted #42b0b0; 
+}
+
+.box6 {
+    min-height: 50px;
+    max-height: 200px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    background-color: #602b2b;
+    border: 2px solid #602b2b;
+    margin: 30px;
+    outline: 2px dashed #42b0b0; 
+}
